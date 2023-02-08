@@ -24,9 +24,9 @@ public class JDBCTests {
 		
 		try(Connection con = 
 				DriverManager.getConnection(
-						"jdbc:mariadb://localhost:3306/book_ex",
-						"book_ex",
-						"book_ex")){
+						"jdbc:mariadb://localhost:3306/BOOK",
+						"book-ex",
+						"book-ex")){
 			
 			log.info(con);
 		} catch (Exception e) {
