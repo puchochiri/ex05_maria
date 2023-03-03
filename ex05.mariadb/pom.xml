@@ -215,8 +215,12 @@
 		    <artifactId>spring-security-taglibs</artifactId>
 		    <version>5.0.6.RELEASE</version>
 		</dependency>
-		
-		
+		 <dependency>
+		  	<groupId>org.apache.maven.plugins</groupId>
+		  	<artifactId>maven-war-plugin</artifactId>
+		  	<version>3.3.2</version>
+		 </dependency>
+				
 	</dependencies>
     <build>
         <plugins>
@@ -255,6 +259,11 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
+            <plugin>
+			   	<groupId>org.apache.maven.plugins</groupId>
+			   	<artifactId>maven-war-plugin</artifactId>
+			   	<version>3.3.2</version>
+			</plugin>
         </plugins>
     </build>
 </project>
